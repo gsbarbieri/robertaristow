@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400;500;700&display=swap');
 
 :root {
   --ink: #171614;
@@ -19,16 +19,16 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Yantramanav', sans-serif;
   background: var(--paper);
   color: var(--ink);
-  font-weight: 400;
+  font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -59,7 +59,8 @@ img {
   background: var(--ink);
   color: var(--paper);
   padding: 0.7rem 1.1rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -165,7 +166,7 @@ img {
 
 .hero-text h2 {
   margin-top: 0.6rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Yantramanav', sans-serif;
   font-weight: 300;
   font-size: clamp(1rem, 2vw, 1.3rem);
   letter-spacing: 0.03em;
@@ -239,8 +240,8 @@ main {
   margin: 2rem 0 0;
   padding-left: 1.2rem;
   border-left: 2px solid var(--accent);
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 400;
   font-size: 1.15rem;
   color: var(--ink);
 }
@@ -294,7 +295,8 @@ main {
 }
 
 .pub-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: 400;
   font-size: 1.15rem;
   margin-top: 0.35rem;
   line-height: 1.35;
