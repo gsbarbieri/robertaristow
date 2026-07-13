@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roberta Ristow Photos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Roberta Ristow</h1>
+    <p class="tagline">Photography</p>
+  </header>
+
+  <main>
+    <div id="gallery" class="gallery"></div>
+    <p id="empty-message" class="empty-message" hidden>
+      No photos yet — add images to the <code>/images</code> folder and list
+      them in <code>images.js</code>. See the README for details.
+    </p>
+  </main>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Roberta Ristow</p>
+  </footer>
+
+  <script src="images.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
