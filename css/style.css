@@ -97,26 +97,78 @@ img {
 }
 
 .lang-switch {
-  display: flex;
-  gap: 0.5rem;
-  font-size: 0.85rem;
-  color: var(--muted);
+  position: relative;
 }
 
-.lang-switch button {
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 0;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  color: var(--ink);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.lang-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.lang-toggle:hover,
+.lang-toggle[aria-expanded="true"] {
+  border-color: var(--line);
+  color: var(--accent);
+}
+
+.main-nav ul.lang-menu {
+  display: block;
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  right: 0;
+  min-width: 140px;
+  margin: 0;
+  padding: 0.4rem 0;
+  list-style: none;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(23, 22, 20, 0.08);
+  z-index: 30;
+}
+
+.lang-menu li {
+  display: block;
+}
+
+.main-nav ul.lang-menu[hidden] {
+  display: none;
+}
+
+.lang-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
   background: none;
   border: none;
   font: inherit;
-  color: inherit;
+  font-size: 0.9rem;
+  color: var(--ink);
   cursor: pointer;
-  padding: 0.1rem 0.3rem;
-  letter-spacing: 0.05em;
 }
 
-.lang-switch button.active {
-  color: var(--ink);
-  font-weight: 600;
-  border-bottom: 1px solid var(--accent);
+.lang-menu button:hover {
+  background: var(--paper-dim);
+}
+
+.lang-menu button.active {
+  color: var(--accent);
+  font-weight: 500;
 }
 
 /* Hero carousel */
@@ -160,16 +212,17 @@ img {
 }
 
 .hero-text h1 {
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-size: clamp(3.3rem, 7.5vw, 5.4rem);
   font-weight: 400;
   letter-spacing: -0.02em;
+  line-height: 1;
 }
 
 .hero-text h2 {
-  margin-top: 0.6rem;
+  margin-top: 0.2rem;
   font-family: 'Yantramanav', sans-serif;
   font-weight: 300;
-  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-size: clamp(1.5rem, 3vw, 1.95rem);
   letter-spacing: 0.03em;
   color: rgba(250, 248, 245, 0.9);
 }
