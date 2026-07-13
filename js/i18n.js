@@ -1,4 +1,36 @@
 const TRANSLATIONS = {
+  pt: {
+    "nav.exhibitions": "Exposições",
+    "nav.publications": "Publicações",
+    "nav.about": "Sobre",
+    "nav.contact": "Contato",
+
+    "home.h2": "Consultora de Arte, Curadora e Escritora de Arte",
+
+    "exhibitions.title": "Exposições",
+    "exhibitions.subtitle": "Projetos Curatoriais",
+    "exhibitions.body": "Exposições selecionadas e projetos curatoriais serão apresentados aqui em breve.",
+
+    "publications.title": "Publicações",
+    "publications.subtitle": "Textos e Imprensa Selecionados",
+    "publications.readMore": "Ler artigo →",
+
+    "about.title": "Sobre",
+    "about.p1": "Roberta Ristow é consultora de arte e jornalista baseada em Lisboa, atuando entre o Brasil e a Europa. Especializou-se em Gestão de Arte no Sotheby’s Institute of Art, em Londres, onde viveu por dois anos.",
+    "about.p2": "Sua atuação profissional abrange gestão cultural, comunicação estratégica e consultoria em arte. Colabora com instituições, colecionadores e artistas em exposições, iniciativas culturais e projetos editoriais que conectam arte, educação e engajamento público.",
+    "about.p3": "Desde 2020, Roberta é Diretora Institucional da Casa da Escada Colorida, um espaço de arte independente e sem fins lucrativos no Rio de Janeiro, dedicado à pesquisa e experimentação artística. Como jornalista, colabora com a Vogue Brasil desde 2017, escrevendo sobre arte contemporânea e cultura.",
+    "about.p4": "Anteriormente, liderou o departamento de Branded Content da Editora Globo / Grupo Globo por nove anos, desenvolvendo projetos multiplataforma para mais de 35 marcas internacionais e trabalhando em estreita colaboração com a TV Globo e a Globo Condé Nast.",
+    "about.quote": "Ela acredita, como disse certa vez Louise Bourgeois, que “a arte é uma garantia de sanidade” — e isso permanece central em sua prática profissional.",
+
+    "contact.title": "Contato",
+    "contact.subtitle": "Fale conosco",
+    "contact.email": "E-mail",
+    "contact.phone": "Telefone",
+    "contact.instagram": "Instagram",
+    "contact.linkedin": "LinkedIn",
+
+    "footer.copyright": "© 2026 Roberta Ristow"
+  },
   en: {
     "nav.exhibitions": "Exhibitions",
     "nav.publications": "Publications",
@@ -27,6 +59,7 @@ const TRANSLATIONS = {
     "contact.email": "Email",
     "contact.phone": "Phone",
     "contact.instagram": "Instagram",
+    "contact.linkedin": "LinkedIn",
 
     "footer.copyright": "© 2026 Roberta Ristow"
   },
@@ -58,6 +91,7 @@ const TRANSLATIONS = {
     "contact.email": "Correo",
     "contact.phone": "Teléfono",
     "contact.instagram": "Instagram",
+    "contact.linkedin": "LinkedIn",
 
     "footer.copyright": "© 2026 Roberta Ristow"
   },
@@ -89,13 +123,14 @@ const TRANSLATIONS = {
     "contact.email": "E-mail",
     "contact.phone": "Téléphone",
     "contact.instagram": "Instagram",
+    "contact.linkedin": "LinkedIn",
 
     "footer.copyright": "© 2026 Roberta Ristow"
   }
 };
 
 function applyLanguage(lang) {
-  if (!TRANSLATIONS[lang]) lang = "en";
+  if (!TRANSLATIONS[lang]) lang = "pt";
   const dict = TRANSLATIONS[lang];
   document.documentElement.setAttribute("lang", lang);
   document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -109,7 +144,7 @@ function applyLanguage(lang) {
 }
 
 function initLanguage() {
-  const saved = localStorage.getItem("rr-lang") || "en";
+  const saved = localStorage.getItem("rr-lang") || "pt";
   applyLanguage(saved);
   document.querySelectorAll(".lang-switch button").forEach((btn) => {
     btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));

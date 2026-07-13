@@ -392,15 +392,24 @@ main {
 
 .footer-social {
   display: flex;
-  gap: 1rem;
+  gap: 1.1rem;
+  align-items: center;
 }
 
 .footer-social a {
   color: var(--muted);
+  display: inline-flex;
+  align-items: center;
 }
 
 .footer-social a:hover {
   color: var(--accent);
+}
+
+.footer-social svg {
+  width: 20px;
+  height: 20px;
+  display: block;
 }
 
 @media (max-width: 640px) {
