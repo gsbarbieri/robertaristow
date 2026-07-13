@@ -161,7 +161,8 @@ img {
 
 .hero-text h1 {
   font-size: clamp(2.2rem, 5vw, 3.6rem);
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 
 .hero-text h2 {
