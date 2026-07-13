@@ -2,10 +2,10 @@ const TRANSLATIONS = {
   pt: {
     "nav.exhibitions": "Exposições",
     "nav.publications": "Publicações",
-    "nav.about": "Sobre",
+    "nav.about": "Sobre mim",
     "nav.contact": "Contato",
 
-    "home.h2": "Consultora de Arte, Curadora e Escritora de Arte",
+    "home.h2": "Consultora de Arte, Curadora e Escritora",
 
     "exhibitions.title": "Exposições",
     "exhibitions.subtitle": "Projetos Curatoriais",
@@ -34,10 +34,10 @@ const TRANSLATIONS = {
   en: {
     "nav.exhibitions": "Exhibitions",
     "nav.publications": "Publications",
-    "nav.about": "About",
+    "nav.about": "About me",
     "nav.contact": "Contact",
 
-    "home.h2": "Art Consultant, Curator & Art Writer",
+    "home.h2": "Art Consultant, Curator and Writer",
 
     "exhibitions.title": "Exhibitions",
     "exhibitions.subtitle": "Curatorial Projects",
@@ -66,10 +66,10 @@ const TRANSLATIONS = {
   es: {
     "nav.exhibitions": "Exposiciones",
     "nav.publications": "Publicaciones",
-    "nav.about": "Acerca de",
+    "nav.about": "Acerca de mí",
     "nav.contact": "Contacto",
 
-    "home.h2": "Consultora de Arte, Curadora y Escritora de Arte",
+    "home.h2": "Consultora de Arte, Curadora y Escritora",
 
     "exhibitions.title": "Exposiciones",
     "exhibitions.subtitle": "Proyectos Curatoriales",
@@ -98,10 +98,10 @@ const TRANSLATIONS = {
   fr: {
     "nav.exhibitions": "Expositions",
     "nav.publications": "Publications",
-    "nav.about": "À propos",
+    "nav.about": "À propos de moi",
     "nav.contact": "Contact",
 
-    "home.h2": "Consultante en Art, Commissaire d’Exposition et Critique d’Art",
+    "home.h2": "Consultante en Art, Commissaire d’Exposition et Rédactrice",
 
     "exhibitions.title": "Expositions",
     "exhibitions.subtitle": "Projets de Commissariat",
