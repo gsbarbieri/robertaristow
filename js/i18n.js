@@ -29,6 +29,13 @@ const TRANSLATIONS = {
     "contact.instagram": "Instagram",
     "contact.linkedin": "LinkedIn",
 
+    "contact.form.name": "Nome",
+    "contact.form.email": "E-mail",
+    "contact.form.subject": "Assunto",
+    "contact.form.message": "Mensagem",
+    "contact.form.send": "Enviar mensagem",
+    "contact.form.success": "Obrigada pela mensagem! Retornarei em breve.",
+
     "footer.copyright": "© 2026 Roberta Ristow"
   },
   en: {
@@ -60,6 +67,13 @@ const TRANSLATIONS = {
     "contact.phone": "Phone",
     "contact.instagram": "Instagram",
     "contact.linkedin": "LinkedIn",
+
+    "contact.form.name": "Name",
+    "contact.form.email": "Email",
+    "contact.form.subject": "Subject",
+    "contact.form.message": "Message",
+    "contact.form.send": "Send message",
+    "contact.form.success": "Thank you for your message! I'll get back to you soon.",
 
     "footer.copyright": "© 2026 Roberta Ristow"
   },
@@ -93,6 +107,13 @@ const TRANSLATIONS = {
     "contact.instagram": "Instagram",
     "contact.linkedin": "LinkedIn",
 
+    "contact.form.name": "Nombre",
+    "contact.form.email": "Correo electrónico",
+    "contact.form.subject": "Asunto",
+    "contact.form.message": "Mensaje",
+    "contact.form.send": "Enviar mensaje",
+    "contact.form.success": "¡Gracias por tu mensaje! Te responderé pronto.",
+
     "footer.copyright": "© 2026 Roberta Ristow"
   },
   fr: {
@@ -124,6 +145,13 @@ const TRANSLATIONS = {
     "contact.phone": "Téléphone",
     "contact.instagram": "Instagram",
     "contact.linkedin": "LinkedIn",
+
+    "contact.form.name": "Nom",
+    "contact.form.email": "E-mail",
+    "contact.form.subject": "Sujet",
+    "contact.form.message": "Message",
+    "contact.form.send": "Envoyer le message",
+    "contact.form.success": "Merci pour votre message ! Je vous répondrai bientôt.",
 
     "footer.copyright": "© 2026 Roberta Ristow"
   }
@@ -186,4 +214,17 @@ function initLanguage() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", initLanguage);
+function initContactForm() {
+  const form = document.getElementById("contact-form");
+  const success = document.getElementById("form-success");
+  if (!form || !success) return;
+  if (new URLSearchParams(window.location.search).get("sent") === "1") {
+    form.hidden = true;
+    success.hidden = false;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  initLanguage();
+  initContactForm();
+});

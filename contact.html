@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contato — Roberta Ristow</title>
-<link rel="stylesheet" href="css/style.css?v=4">
+<link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
   <header class="site-header">
@@ -61,6 +61,33 @@
           <a href="https://www.linkedin.com/in/robertaristow/" target="_blank" rel="noopener">/in/robertaristow</a>
         </li>
       </ul>
+
+      <p id="form-success" class="form-success" data-i18n="contact.form.success" hidden>Obrigada pela mensagem! Retornarei em breve.</p>
+
+      <form id="contact-form" class="contact-form" action="https://formsubmit.co/robertaristow@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New message from robertaristow.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://gsbarbieri.github.io/robertaristow/contact.html?sent=1">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="form-field">
+          <label for="name" data-i18n="contact.form.name">Nome</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-field">
+          <label for="email" data-i18n="contact.form.email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-field">
+          <label for="subject" data-i18n="contact.form.subject">Assunto</label>
+          <input type="text" id="subject" name="subject">
+        </div>
+        <div class="form-field">
+          <label for="message" data-i18n="contact.form.message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="form-submit" data-i18n="contact.form.send">Enviar mensagem</button>
+      </form>
     </section>
   </main>
 
