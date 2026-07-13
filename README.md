@@ -1,36 +1,33 @@
-# Roberta Ristow Photos
+# Roberta Ristow
 
-A simple static photo gallery site.
+Personal site for Roberta Ristow — art consultant, curator, and art writer.
+Design inspired by [artfirst.co.uk](https://artfirst.co.uk/).
 
-## Adding your photos
+## Pages
 
-1. Copy your image files (jpg/png/etc.) into the `images/` folder.
-2. Open `images.js` and list each filename in the `PHOTOS` array, e.g.:
+- `index.html` — Home, hero image carousel
+- `exhibitions.html` — Exhibitions (placeholder, content pending)
+- `publications.html` — Selected press and writing, linking to original articles
+- `about.html` — Bio and portrait
+- `contact.html` — Email, phone, Instagram
 
-   ```js
-   const PHOTOS = ["sunset.jpg", "portrait-01.jpg", "travel-03.jpg"];
-   ```
+## Languages
 
-3. Open `index.html` in a browser to preview locally, or refresh the page
-   if it's already open.
+The site supports English, Spanish, and French via a client-side switcher
+(top right of the header). Translations live in `js/i18n.js` as a single
+dictionary keyed by `data-i18n` attributes on the HTML elements. The chosen
+language is remembered in `localStorage` across page visits.
 
-### Getting photos from Instagram
+## Structure
 
-Instagram doesn't offer a simple way to bulk-download your own posts via
-script. Use the official export instead:
-
-Instagram app/site → Settings → **Accounts Center** → **Your information and
-permissions** → **Download your information** → request a copy of your
-photos. Once downloaded, copy the images you want into `images/`.
-
-## Publishing
-
-This site is plain HTML/CSS/JS — no build step. It's deployed via GitHub
-Pages from this repo.
+```
+css/style.css     — all styling
+js/i18n.js        — translations + language switcher
+js/carousel.js    — home page hero carousel
+images/           — hero photos (header-1/2/3.jpg) and about.jpg
+```
 
 ## Local preview
-
-Just open `index.html` directly in a browser, or run a tiny local server:
 
 ```
 python3 -m http.server 8000

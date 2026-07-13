@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Roberta Ristow — Art Consultant, Curator & Art Writer</title>
+<title>Exhibitions — Roberta Ristow</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
     <a class="logo-box" href="index.html">Roberta Ristow</a>
     <nav class="main-nav">
       <ul>
-        <li><a href="exhibitions.html" data-i18n="nav.exhibitions">Exhibitions</a></li>
+        <li><a href="exhibitions.html" class="active" data-i18n="nav.exhibitions">Exhibitions</a></li>
         <li><a href="publications.html" data-i18n="nav.publications">Publications</a></li>
         <li><a href="about.html" data-i18n="nav.about">About</a></li>
         <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
@@ -25,23 +25,12 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-slide active">
-        <img src="images/header-1.jpg" alt="Roberta Ristow">
-      </div>
-      <div class="hero-slide">
-        <img src="images/header-2.jpg" alt="Roberta Ristow">
-      </div>
-      <div class="hero-slide">
-        <img src="images/header-3.jpg" alt="Roberta Ristow">
-      </div>
-      <div class="hero-overlay"></div>
-      <div class="hero-text">
-        <h1>Roberta Ristow</h1>
-        <h2 data-i18n="home.h2">Art Consultant, Curator &amp; Art Writer</h2>
-      </div>
-      <button class="hero-nav prev" aria-label="Previous slide">&#10094;</button>
-      <button class="hero-nav next" aria-label="Next slide">&#10095;</button>
+    <div class="page-header">
+      <h1 data-i18n="exhibitions.title">Exhibitions</h1>
+      <p data-i18n="exhibitions.subtitle">Curatorial Projects</p>
+    </div>
+    <section class="placeholder-section">
+      <p data-i18n="exhibitions.body">Selected exhibitions and curatorial projects will be featured here soon.</p>
     </section>
   </main>
 
@@ -57,6 +46,5 @@
   </footer>
 
   <script src="js/i18n.js"></script>
-  <script src="js/carousel.js"></script>
 </body>
 </html>
